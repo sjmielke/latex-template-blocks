@@ -1,0 +1,7 @@
+% for this short report don't include a pagebreak for each chapter
+\makeatletter
+	\renewcommand\chapter{\thispagestyle{plain}%
+	\global\@topnum\z@
+	\@afterindentfalse
+	\secdef\@chapter\@schapter}
+\makeatother

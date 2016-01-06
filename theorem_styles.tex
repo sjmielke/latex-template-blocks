@@ -1,0 +1,12 @@
+\theoremstyle{definition}
+\declaretheorem[qed=$\Box$, name=Definition,refname={Def.,Defs.}, numbered=no]{definition}
+\declaretheorem[qed=$\Box$, name=Example, refname={Ex.,Exs.},numbered=no]{example}
+\declaretheorem[qed=$\blacksquare$, name=Corollary,refname={Cor.,Cors.}, numbered=no]{corollary}
+\declaretheorem[qed=$\blacksquare$, name=Observation, refname={Obs.},numbered=no]{observation}
+\declaretheorem[name=Theorem, refname={Thm.,Thms.},numbered=no]{theorem}
+\declaretheorem[name=Proposition, refname={Prop.,Props.},numbered=no]{proposition}
+\declaretheorem[name=Lemma, refname={Lem.,Lems.},numbered=no]{lemma}
+\declaretheorem[name=Claim, refname={Cl.,Cls.},numbered=no]{claim}
+% \theoremstyle{proof}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\newenvironment{supplementalproof}[1]{\begin{proof}[Supplemental to the proof of \cref{#1}]}{\end{proof}}

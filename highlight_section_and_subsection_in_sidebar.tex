@@ -1,0 +1,9 @@
+% Highlight section and subsection in sidebar
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\insertverticalnavigation}%
+{\ifx\beamer@nav@css\beamer@hidetext{\usebeamertemplate{section in sidebar}}\else{\usebeamertemplate{section in sidebar shaded}}\fi}%
+{{\usebeamertemplate{section in sidebar}}}{}{}
+\makeatother
+
+\newcommand{\indentedItem}[2][]{\item[]#1 {\usebeamercolor[fg]{itemize item} #2}}

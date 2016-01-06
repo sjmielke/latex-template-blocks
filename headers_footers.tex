@@ -1,0 +1,13 @@
+% "Beautiful" (i.e. sufficient) headers and footers
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\automark[chapter]{section}
+\ohead{\pagemark}
+\chead{\headmark}
+\textheight=23cm
+
+% Page number at bottom only for new chapter page
+\deftripstyle{ChapterStyle}{}{}{}{}{\pagemark}{}
+\renewcommand*{\chapterpagestyle}{ChapterStyle}

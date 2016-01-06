@@ -1,0 +1,14 @@
+\usepackage[backend=biber, style=alphabetic, backref=true]{biblatex}
+\addbibresource{~/documents/Uni/Jabref/jabref.bib}
+\DeclareSourcemap{
+	\maps[datatype=bibtex]{
+		\map[overwrite]{
+			\step[fieldsource=doi,final]
+			\step[fieldset=url,null]
+		}
+		\map[overwrite]{
+			\step[fieldsource=abstract]
+			\step[fieldset=abstract,null]
+		}
+	}
+}

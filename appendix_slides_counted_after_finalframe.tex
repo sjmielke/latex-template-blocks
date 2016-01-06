@@ -1,0 +1,10 @@
+% Counting appendix slides (this keeps the number, but caps the total before)
+% Taken from http://tex.stackexchange.com/questions/70448/dont-count-backup-slides
+% It also describes an alternative, a package that restarts counting and total for the appendix.
+\newcommand{\backupbegin}{
+   \newcounter{finalframe}
+   \setcounter{finalframe}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \setcounter{framenumber}{\value{finalframe}}
+}

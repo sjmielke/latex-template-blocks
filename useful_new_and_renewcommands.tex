@@ -1,0 +1,23 @@
+\definecolor{gray}{gray}{0.7}
+
+\newcommand{\todo}[1]{
+	{\colorbox{gray}{\begin{minipage}{\textwidth}\bfseries #1\end{minipage}}}
+}
+
+\newcommand{\inlinetodo}[1]{\textcolor{red}{#1}}
+
+\newcommand{\new}[1]{\emph{#1}}
+
+\newcommand{\mathtext}[1]{\;\text{#1}\;}
+
+\renewcommand*{\mathellipsis}{%
+	\mathinner{{\ldotp}{\ldotp}{\ldotp}}%
+}
+
+\usepackage{bm}
+% bold vectors instead of arrows
+\renewcommand{\vec}[1]{\bm{#1}}
+% lets make matrices bold, too
+\newcommand{\mat}[1]{\bm{#1}} % recomended by ISO
+
+\lstset{escapechar=§}

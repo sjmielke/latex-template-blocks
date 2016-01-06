@@ -1,0 +1,74 @@
+%pdflatex
+\documentclass[fontsize=12pt, paper=a4, twoside=false, parskip=half+, pagesize=auto, numbers=noenddot, open=right, toc=listof, toc=bibliography, fleqn]{scrreprt}
+% other options: headinclude
+\usepackage{scrhack} % fix KOMAscript incompatibilities
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\input{~/LaTeX-Templates/beautiful_fonts.tex}
+
+\input{~/LaTeX-Templates/standard_includes.tex}
+\input{~/LaTeX-Templates/headers_footers.tex}
+
+\input{~/LaTeX-Templates/add_jabref_bib.tex}
+\input{~/LaTeX-Templates/theorem_styles.tex}
+\input{~/LaTeX-Templates/useful_newcommands.tex}
+
+%\input{~/LaTeX-Templates/haskell_listings.tex}
+%\input{~/LaTeX-Templates/linear_figure_numbers_per_section.tex}
+%\input{~/LaTeX-Templates/no_pagebreak_after_chapter.tex}
+
+\usepackage[pdfauthor={Sebastian J. Mielke}, pdftitle={WIP report}, breaklinks=true, colorlinks=false, pdfborder={0 0 0}]{hyperref}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+% Titelseite
+\begin{center}
+	\vspace*{5mm}
+	{\Huge Title\\[.25\baselineskip]Lines}\\
+	\vspace{15mm}
+	
+	{\Large some report}\\\\
+	
+	\vspace{50mm}
+	\begin{large}
+		TUD\\
+	\end{large}
+	\vspace{20mm}
+	2000-01-01\\
+	\vspace{20mm}
+	Sebastian J. Mielke \\
+	Matrikelnr.: XXXXXXX\\
+	\vspace{30mm}
+	\begin{tabular}{rl}
+		{\bfseries Verantwortlicher Hochschullehrer} & ?\\
+		{\bfseries Betreuer} & ?\\
+	\end{tabular}
+\end{center}
+
+\clearpage
+\pagenumbering{Roman}
+
+\tableofcontents
+
+\clearpage
+
+\pagenumbering{arabic}
+
+% CONTENT: chapter - section...
+
+\clearpage
+
+\appendix
+
+% CONTENT: chapter - section...
+
+\clearpage
+
+\printbibliography
+
+\end{document}
