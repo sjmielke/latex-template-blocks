@@ -7,20 +7,25 @@
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 
-\input{~/LaTeX-Templates/beautiful_fonts.tex}
+\input{\string~/documents/LaTeX-Templates/beautiful_fonts.tex}
 
-\input{~/LaTeX-Templates/standard_includes.tex}
-\input{~/LaTeX-Templates/headers_footers.tex}
+\input{\string~/documents/LaTeX-Templates/standard_includes.tex}
+\input{\string~/documents/LaTeX-Templates/headers_footers.tex}
 
-\input{~/LaTeX-Templates/add_jabref_bib.tex}
-\input{~/LaTeX-Templates/theorem_styles.tex}
-\input{~/LaTeX-Templates/useful_newcommands.tex}
+\input{\string~/documents/LaTeX-Templates/add_jabref_bib.tex}
+\input{\string~/documents/LaTeX-Templates/theorems.tex}
+\input{\string~/documents/LaTeX-Templates/useful_new_and_renewcommands.tex}
 
-%\input{~/LaTeX-Templates/haskell_listings.tex}
-%\input{~/LaTeX-Templates/linear_figure_numbers_per_section.tex}
-%\input{~/LaTeX-Templates/no_pagebreak_after_chapter.tex}
+%\input{\string~/documents/LaTeX-Templates/haskell_listings.tex}
+%\input{\string~/documents/LaTeX-Templates/linear_figure_numbers_per_section.tex}
+%\input{\string~/documents/LaTeX-Templates/no_pagebreak_after_chapter.tex}
 
-\usepackage[pdfauthor={Sebastian J. Mielke}, pdftitle={WIP report}, breaklinks=true, colorlinks=false, pdfborder={0 0 0}]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+	pdfauthor={Sebastian J. Mielke},
+	pdftitle={WIP report},
+	breaklinks=true, colorlinks=false, pdfborder={0 0 0}
+}
 
 \begin{document}
 
@@ -32,7 +37,7 @@
 	{\Huge Title\\[.25\baselineskip]Lines}\\
 	\vspace{15mm}
 	
-	{\Large some report}\\\\
+	{\Large some report}\\
 	
 	\vspace{50mm}
 	\begin{large}

@@ -1,0 +1,27 @@
+% Frame number next to navigation bar
+\makeatletter
+	\setbeamertemplate{sidebar right}
+	{
+% The following lines were probably used for the berkeley theme:
+%		\beamer@tempdim=\beamer@sidebarwidth%
+%		\advance\beamer@tempdim by -6pt%
+%		\vskip4em%
+%		\insertverticalnavigation{\beamer@sidebarwidth}%
+		\vfill%
+		\raisebox{.5em}{%
+			\llap{
+				% Personal preference:
+				%\usebeamertemplate***{navigation symbols}\hskip.3cm%
+				{\ifnum\value{framenumber}>0\relax%
+					\scriptsize\color{gray}%
+					\raisebox{.25em}{%
+						\insertframenumber\color{lightgray}
+						% Personal preference:
+						%/\inserttotalframenumber%
+						\hspace{.5em}%
+					}%
+				\else\fi}%
+			}%
+		}%
+	}%
+\makeatother
