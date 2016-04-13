@@ -1,0 +1,57 @@
+%xelatex
+\documentclass[notheorems, fleqn]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage{fontspec}
+% somethin with EU1 encoding overwriting this, see http://tex.stackexchange.com/questions/66949/command-nobreakspace-unavailable-when-switching-to-t1-encoding-under-xelatex/66951#66951
+\DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ } 
+
+\usepackage{polyglossia}
+\setmainlanguage{english}
+
+%\input{\string~/documents/LaTeX-Templates/set_beamercolor_berkeley_printout.tex}
+
+\input{\string~/documents/LaTeX-Templates/standard_includes.tex}
+\input{\string~/documents/LaTeX-Templates/add_jabref_bib.tex}
+\setbeamertemplate{bibliography item}{\insertbiblabel} % instead of useless document icons use the label
+\input{\string~/documents/LaTeX-Templates/appendix_slides_counted_after_finalframe.tex}
+\input{\string~/documents/LaTeX-Templates/minimal_frame_number_template.tex}
+\input{\string~/documents/LaTeX-Templates/linear_figure_numbers_per_section.tex}
+\input{\string~/documents/LaTeX-Templates/theorems.tex}
+\input{\string~/documents/LaTeX-Templates/outline_at_each_section_begin.tex}
+\input{\string~/documents/LaTeX-Templates/useful_new_and_renewcommands.tex}
+
+%\input{\string~/documents/LaTeX-Templates/highlight_section_and_subsection_in_sidebar.tex}
+%\input{\string~/documents/LaTeX-Templates/haskell_listings.tex}
+
+\hypersetup{
+	pdfauthor={Sebastian J. Mielke},
+	pdftitle={WIP Slides},
+	breaklinks=true, colorlinks=false, pdfborder={0 0 0}
+}
+
+\title{WIP Slides}
+\author{Sebastian J. Mielke}
+\institute{TUD}
+\date{2000-01-01}
+
+\begin{document}
+
+\frame{\maketitle}
+
+\frame{\frametitle{Outline}\tableofcontents[hidesubsections]}
+
+
+% CONTENT HERE: (part) - section...
+
+
+\backupbegin
+\appendix
+
+
+% CONTENT HERE: (part) - section...
+
+
+\backupend
+\end{document}

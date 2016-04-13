@@ -1,0 +1,7 @@
+\newcommand<>\uncoveralt[2]{{%
+    \sbox0{$\displaystyle #1$}%
+    \sbox1{$\displaystyle #2$}%
+    \alt#3%
+        {\rlap{\usebox0}\vphantom{\usebox1}\hphantom{\ifnum\wd0>\wd1 \usebox0\else\usebox1\fi}}%
+        {\rlap{\usebox1}\vphantom{\usebox0}\hphantom{\ifnum\wd0>\wd1 \usebox0\else\usebox1\fi}}%
+}}
